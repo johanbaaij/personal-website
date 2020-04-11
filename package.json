@@ -1,0 +1,52 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Personal website of Johan Baaij",
+  "author": "Johan Baaij",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "generate": "nuxt-ts generate",
+    "start": "nuxt-ts start",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "test": "jest"
+  },
+  "lint-staged": {
+    "*.{ts,js,vue}": "yarn lint",
+    "*.{css,vue}": "stylelint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^0.4.4",
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/dotenv": "^1.4.0",
+    "nuxt": "^2.0.0",
+    "nuxt-webfontloader": "^1.1.0"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.6.3",
+    "@nuxtjs/eslint-config": "^2.0.0",
+    "@nuxtjs/eslint-config-typescript": "^1.0.2",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/stylelint-module": "^3.1.0",
+    "@nuxtjs/tailwindcss": "^1.0.0",
+    "@types/webpack-hot-middleware": "^2.25.0",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-jest": "^25.3.0",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.0.0",
+    "jest": "^25.3.0",
+    "lint-staged": "^10.0.0",
+    "prettier": "^2.0.4",
+    "stylelint": "^13.3.1",
+    "vue-jest": "^4.0.0-0"
+  }
+}
