@@ -1,27 +1,23 @@
 <template>
-  <!-- eslint-disable vue/no-v-html -->
-  <article class="lg:col-span-9 col-span-12">
-    <h1 class="text-3xl">{{ blogPost.title }}</h1>
-
-    <div
-      v-highlightjs
-      class="markdown mt-6"
-      v-html="$md.render(blogPost.body)"
-    />
-  </article>
+  <blog-post :blog-post="blogPost" />
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import 'highlight.js/styles/vs2015.css'
+import { Component, Vue } from 'nuxt-property-decorator'
+import BlogPost from '@/components/BlogPost.vue'
 
-export default Vue.extend({
-  async asyncData({ params, payload }) {
+@Component({
+  components: { BlogPost }
+})
+class BlogPostPage extends Vue {
+  async asyncData({ params, payload }: any) {
     if (payload) return { blogPost: payload }
     else
       return {
         blogPost: await require(`~/assets/content/blog/${params.slug}.json`)
       }
   }
-})
+}
+
+export default BlogPostPage
 </script>
