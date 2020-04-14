@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="col-span-12">
     <h2 class="text-xl">Blog</h2>
     <ul>
       <li v-for="blog in blogPosts" :key="blog.slug">

@@ -1,10 +1,10 @@
 <template>
   <div class="container mx-auto">
-    <div class="mt-8 grid grid-cols-12 gap-4">
-      <div class="col-start-4 col-span-1">
+    <div class="mt-6 grid grid-cols-12 gap-4">
+      <div class="col-span-1">
         <nuxt-link to="/">
           <img
-            class="w-10 ml-auto mt-4"
+            class="w-10 mx-auto mt-4"
             src="~/assets/img/logo.svg"
             alt="Logo for Johan Baaij Software Development"
           />
@@ -16,7 +16,21 @@
         </h1>
       </div>
     </div>
-
-    <nuxt />
+    <div class="mt-6 grid grid-cols-12 gap-4">
+      <nuxt />
+    </div>
   </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  head() {
+    return {
+      bodyAttrs: {
+        class: 'my-6'
+      }
+    }
+  }
+})
+</script>
