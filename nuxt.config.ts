@@ -45,7 +45,12 @@ export default {
   },
   axios: {},
   build: {
-    extend() {}
+    extend() {},
+    postcss: {
+      plugins: {
+        'postcss-nested': {}
+      }
+    }
   },
   webfontloader: {
     google: {
