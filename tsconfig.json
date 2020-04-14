@@ -15,7 +15,12 @@
       "~/*": ["./*"],
       "@/*": ["./*"]
     },
-    "types": ["@types/node", "@nuxt/types"]
+    "types": [
+      "@types/node",
+      "@nuxt/types",
+      "@types/webpack-env",
+      "@types/highlight.js"
+    ]
   },
   "exclude": ["node_modules"]
 }

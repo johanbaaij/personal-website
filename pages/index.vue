@@ -12,13 +12,15 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
-  computed: {
-    blogPosts() {
-      return this.$store.state.blogPosts
-    }
-  },
+import { Component, Vue } from 'nuxt-property-decorator'
+import { RootState } from '~/store'
+
+@Component({})
+class HomePage extends Vue {
+  get blogPosts() {
+    return (this.$store.state as RootState).blogPosts
+  }
+
   head() {
     return {
       script: [
@@ -26,5 +28,6 @@ export default Vue.extend({
       ]
     }
   }
-})
+}
+export default HomePage
 </script>
