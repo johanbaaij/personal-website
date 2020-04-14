@@ -31,6 +31,9 @@ export default {
   markdownit: {
     injected: true
   },
+  purgeCSS: {
+    enabled: false
+  },
   generate: {
     routes() {
       const fs = require('fs')
