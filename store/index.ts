@@ -1,14 +1,19 @@
+import { ActionTree, MutationTree } from 'vuex'
+import { IBlogPost } from '~/types/blog'
+
 export const state = () => ({
-  blogPosts: []
+  blogPosts: [] as IBlogPost[]
 })
 
-export const mutations = {
+export type RootState = ReturnType<typeof state>
+
+export const mutations: MutationTree<RootState> = {
   setBlogPosts(state, list) {
     state.blogPosts = list
   }
 }
 
-export const actions = {
+export const actions: ActionTree<RootState, RootState> = {
   async nuxtServerInit({ commit }) {
     const files = await require.context(
       '~/assets/content/blog/',
