@@ -1,8 +1,6 @@
 {
-  "date": "2020-04-13T22:27:16.888Z",
+  "date": "2020-04-13T14:00:00.000Z",
   "title": "#100DaysOfCode day 7",
   "body": "## Progress\n\n* Initial styling for the blog post page.",
-  "tags": [
-    "100DaysOfCode"
-  ]
+  "tags": ["100DaysOfCode"]
 }

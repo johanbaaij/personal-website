@@ -1,8 +1,6 @@
 {
-  "date": "2020-04-13T22:23:33.075Z",
+  "date": "2020-04-12T14:00:00.000Z",
   "title": "#100DaysOfCode day 6",
   "body": "## Progress\n\n* Added this directive for syntax highlighting markdown content from Netlify CMS\n\n```javascript\n\nimport Vue from 'vue'\nimport hljs from 'highlight.js/lib/highlight'\nimport javascript from 'highlight.js/lib/languages/javascript'\nimport xml from 'highlight.js/lib/languages/xml'\nimport hljsDefineVue from 'highlightjs-vue'\n\nhljs.registerLanguage('javascript', javascript)\nhljs.registerLanguage('xml', xml)\n\n// Takes a while to execute\nconst defineVue = () => new Promise((resolve) => resolve(hljsDefineVue(hljs)))\n\nVue.directive('highlightjs', {\n  async inserted(el) {\n    await defineVue()\n    el.querySelectorAll('pre code').forEach((codeBlock) => {\n      hljs.highlightBlock(codeBlock)\n    })\n  }\n})\n```",
-  "tags": [
-    "100DaysOfCode"
-  ]
+  "tags": ["100DaysOfCode"]
 }
