@@ -1,24 +1,31 @@
 <template>
-  <div class="container mx-auto">
-    <div class="mt-6 grid grid-cols-12 gap-4">
-      <div class="col-span-1">
+  <div class="container px-4 mx-auto">
+    <div class="my-40 lg:grid lg:gap-4 lg:grid-cols-12">
+      <div class="lg:col-span-2">
         <nuxt-link to="/">
           <img
-            class="w-10 mx-auto mt-4"
+            class="mx-auto"
             src="~/assets/img/logo.svg"
             alt="Logo for Johan Baaij Software Development"
           />
         </nuxt-link>
       </div>
-      <div class="col-span-7">
-        <h1 class="lowercase text-5xl">
-          Johan Baaij<br />software development
+      <div class="lg:col-span-4">
+        <h1
+          class="text-5xl tracking-widest text-center lowercase lg:inline lg:text-6xl"
+        >
+          Johan Baaij
         </h1>
       </div>
+
+      <div class="lg:col-span-4">
+        <p class="text-2xl">
+          is developing software for the web with Ruby&nbsp;on&nbsp;Rails,
+          Vue.js and other open-source technologies.
+        </p>
+      </div>
     </div>
-    <div class="mt-6 grid grid-cols-12 gap-4">
-      <nuxt />
-    </div>
+    <nuxt />
   </div>
 </template>
 
