@@ -1,0 +1,8 @@
+{
+  "date": "2020-04-10T00:47:13.977Z",
+  "title": "#100DaysOfCode day 3",
+  "body": "## Progress\n\nMinimal coding this Good Friday.\n\n* Worked on a logo and visual ideas for a new personal website\n* Added a [bpm-counter](https://github.com/johanbaaij/bpm-counter) UMD build for usage with the `<script>` tag\n\n![Screenshot of page design sketch in Inkscape](/img/d3-1.jpeg)\n\n## Links\n\n* <https://inkscape.org/>",
+  "tags": [
+    "100DaysOfCode"
+  ]
+}
