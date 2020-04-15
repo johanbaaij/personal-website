@@ -4,7 +4,7 @@
     <li
       v-for="(tag, index) in tags"
       :key="index"
-      class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+      class="inline-block px-3 py-1 mt-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full"
     >
       {{ tag }}
     </li>

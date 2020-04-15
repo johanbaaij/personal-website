@@ -15,7 +15,7 @@ export default {
   },
   loading: { color: '#fff' },
   css: [],
-  plugins: ['~/plugins/hljs.ts'],
+  plugins: ['~/plugins/hljs.ts', '~/plugins/filters.ts'],
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
