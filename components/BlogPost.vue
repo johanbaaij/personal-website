@@ -2,7 +2,9 @@
   <!-- eslint-disable vue/no-v-html -->
   <article class="lg:col-span-9 col-span-12 border-gray-600 rounded-sm">
     <h1 class="text-3xl">{{ blogPost.title }}</h1>
-    <h2 class="font-bold mt-3 text-gray-600">{{ date }}</h2>
+    <h2 class="font-bold mt-3 text-gray-600">
+      {{ blogPost.date | dateString }}
+    </h2>
     <tag-badges class="mt-3" :tags="blogPost.tags" />
     <div
       v-highlightjs
@@ -26,10 +28,6 @@ import 'highlight.js/styles/vs2015.css'
 class BlogPost extends Vue {
   @Prop()
   blogPost!: IBlogPost
-
-  get date() {
-    return new Date(this.blogPost.date).toDateString()
-  }
 }
 
 export default BlogPost
