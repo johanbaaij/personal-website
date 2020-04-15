@@ -20,11 +20,16 @@ export const actions: ActionTree<RootState, RootState> = {
       false,
       /\.json$/
     )
-    const blogPosts = files.keys().map((key) => {
-      const res = files(key)
-      res.slug = key.slice(2, -5)
-      return res
-    })
+
+    const blogPosts = files
+      .keys()
+      .map((key) => {
+        const res = files(key)
+        res.slug = key.slice(2, -5)
+        return res
+      })
+      .reverse()
+
     await commit('setBlogPosts', blogPosts)
   }
 }
