@@ -24,9 +24,10 @@ collections:
           label: 'Category',
           name: 'category',
           widget: 'relation',
+          multiple: true,
           collection: 'categories',
           searchFields: ['title'],
-          valueField: 'slug',
+          valueField: 'title',
           displayFields: ['title'],
         }
   - name: 'categories'
