@@ -24,7 +24,8 @@ export const getters: GetterTree<BlogState, RootState> = {
       (a, b) =>
         (b.tags.includes('100DaysOfCode') ? -1 : 1) -
         (a.tags.includes('100DaysOfCode') ? -1 : 1)
-    )
+    ),
+  postCount: (state) => state.posts.length
 }
 
 export const actions: ActionTree<BlogState, RootState> = {
