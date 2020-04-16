@@ -7,5 +7,9 @@
     "veevalidate",
     "async/await",
     "javascript"
+  ],
+  "category": [
+    "JavaScript",
+    "Vue.js"
   ]
 }
