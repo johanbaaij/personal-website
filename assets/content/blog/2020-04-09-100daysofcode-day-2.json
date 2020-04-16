@@ -2,5 +2,10 @@
   "date": "2020-04-08T14:00:00.000Z",
   "title": "#100DaysOfCode day 2",
   "body": "## Progress\n\n- Spend a bit more time configuring and researching automated semantic releases\n- Added a new feature/check to [bpm-counter](https://github.com/johanbaaij/bpm-counter). Verified the auto generated changelog works\n- Improved [bpm-counter](https://github.com/johanbaaij/bpm-counter) docs\n\n## Thoughts\n\n- Would like to generate/include some API docs for [bpm-counter](https://github.com/johanbaaij/bpm-counter) but not sure what the best practises are here. If possible I prefer to avoid redundant/noisy comments for every class and method. Some packages to investigate:\n  - <https://typedoc.org/>\n  - <https://api-extractor.com/>\n\n## Links\n\n- <https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882>\n- <https://moderatemisbehaviour.github.io/clean-code-smells-and-heuristics/>",
-  "tags": ["100DaysOfCode"]
+  "tags": [
+    "100DaysOfCode"
+  ],
+  "category": [
+    "#100DaysOfCode"
+  ]
 }
