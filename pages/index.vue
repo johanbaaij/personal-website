@@ -16,7 +16,6 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-import { RootState } from '@/store'
 import BlogPostCard from '@/components/BlogPostCard.vue'
 
 @Component({
@@ -26,7 +25,7 @@ import BlogPostCard from '@/components/BlogPostCard.vue'
 })
 class HomePage extends Vue {
   get blogPosts() {
-    return (this.$store.state as RootState).blogPosts
+    return this.$store.getters['blog/homepageFeatures'].slice(0, 5)
   }
 
   head() {
