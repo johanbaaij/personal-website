@@ -1,5 +1,10 @@
 <template>
-  <div class="p-4 text-2xl border-4 border-black rounded-sm">
+  <div
+    :class="{
+      'border-gray-400': isCodeLogEntry
+    }"
+    class="p-4 text-2xl border-4 border-black rounded-sm"
+  >
     <nuxt-link :to="post.slug | blogRoute">
       <h3>{{ post.title }}</h3>
     </nuxt-link>
@@ -25,6 +30,10 @@ import TagBadges from '@/components/TagBadges.vue'
 class BlogPostCard extends Vue {
   @Prop()
   post!: IBlogPost
+
+  get isCodeLogEntry() {
+    return this.post.tags.includes('100DaysOfCode')
+  }
 }
 export default BlogPostCard
 </script>
