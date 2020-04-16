@@ -1,14 +1,14 @@
 <template>
   <!-- eslint-disable vue/no-v-html -->
-  <article class="lg:col-span-9 col-span-12 border-gray-600 rounded-sm">
+  <article class="col-span-12 border-gray-600 rounded-sm lg:col-span-9">
     <h1 class="text-3xl">{{ blogPost.title }}</h1>
-    <h2 class="font-bold mt-3 text-gray-600">
+    <h2 class="mt-3 font-bold text-gray-600">
       {{ blogPost.date | dateString }}
     </h2>
-    <tag-badges class="mt-3" :tags="blogPost.tags" />
+    <tag-badges class="mt-3" :tags="blogPost.categories" />
     <div
       v-highlightjs
-      class="markdown mt-6"
+      class="mt-6 markdown"
       v-html="$md.render(blogPost.body)"
     />
   </article>

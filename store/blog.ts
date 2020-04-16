@@ -22,8 +22,8 @@ export const getters: GetterTree<BlogState, RootState> = {
   homepageFeatures: (_state, getters) =>
     [...getters.sortedByDate].sort(
       (a, b) =>
-        (b.tags.includes('100DaysOfCode') ? -1 : 1) -
-        (a.tags.includes('100DaysOfCode') ? -1 : 1)
+        (b.categories.includes('#100DaysOfCode') ? -1 : 1) -
+        (a.categories.includes('#100DaysOfCode') ? -1 : 1)
     ),
   postCount: (state) => state.posts.length
 }

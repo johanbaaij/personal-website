@@ -13,7 +13,7 @@
         post.date | dateString
       }}</time>
     </nuxt-link>
-    <tag-badges class="" :tags="post.tags" />
+    <tag-badges class="" :tags="post.categories" />
   </div>
 </template>
 
@@ -32,7 +32,7 @@ class BlogPostCard extends Vue {
   post!: IBlogPost
 
   get isCodeLogEntry() {
-    return this.post.tags.includes('100DaysOfCode')
+    return this.post.categories.includes('#100DaysOfCode')
   }
 }
 export default BlogPostCard

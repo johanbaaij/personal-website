@@ -2,10 +2,6 @@
   "date": "2020-04-07T14:00:00.000Z",
   "title": "#100DaysOfCode day 1",
   "body": "## Progress\n\n- Published my first NPM package [bpm-counter](https://github.com/johanbaaij/bpm-counter) using [semantic-release](https://github.com/semantic-release/semantic-release). Releases and versioning are automatically taken care of by this [GitHub action](https://github.com/johanbaaij/bpm-counter/blob/master/.github/workflows/main.yml)\n- Initialized this repository\n\n## Thoughts\n\n- Some benefits of automated semantic-releases:\n  - Forces you to treat `master` as if it may only contain deployable code\n  - Takes the guesswork out of versioning\n  - Sets up your repo for easy contributing and use in the real world\n- It never ceases to amaze me how much tooling and infrastructure is available for open source software\n\n## Links\n\n- <https://www.npmjs.com/package/bpm-counter>\n- <https://github.com/johanbaaij/bpm-counter>\n- <https://github.com/semantic-release/semantic-release>",
-  "tags": [
-    "100DaysOfCode"
-  ],
-  "category": [
-    "#100DaysOfCode"
-  ]
+  "tags": ["100DaysOfCode"],
+  "categories": ["#100DaysOfCode"]
 }
