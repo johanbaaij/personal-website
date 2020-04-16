@@ -1,6 +1,11 @@
 {
   "date": "2020-04-11T14:00:00.000Z",
   "title": "#100DaysOfCode day 5",
-  "tags": ["100DaysOfCode"],
-  "body": "## Progress\n\nContinued work on this website.\n\n* Added Netlify CMS\n* Added highlight.js"
+  "tags": [
+    "100DaysOfCode"
+  ],
+  "body": "## Progress\n\nContinued work on this website.\n\n* Added Netlify CMS\n* Added highlight.js",
+  "category": [
+    "#100DaysOfCode"
+  ]
 }
