@@ -8,7 +8,7 @@
       </h2>
     </div>
     <blog-post-card
-      v-for="post in featuredBlogPosts"
+      v-for="post in featured"
       :key="post.slug"
       class="mt-6 lg:mt-1 lg:h-56 lg:col-span-4"
       :post="post"
@@ -29,8 +29,8 @@ import BlogPostCard from '@/components/BlogPostCard.vue'
   }
 })
 class HomePage extends Vue {
-  get featuredBlogPosts() {
-    return this.$store.getters['blog/homepageFeatures'].slice(0, 5)
+  get featured() {
+    return this.$store.getters['blog/featured'].slice(0, 5)
   }
 
   get postCount() {

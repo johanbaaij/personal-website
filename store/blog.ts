@@ -19,7 +19,7 @@ export const getters: GetterTree<BlogState, RootState> = {
     [...state.posts].sort(
       (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
     ),
-  homepageFeatures: (_state, getters) =>
+  featured: (_state, getters) =>
     [...getters.sortedByDate].sort(
       (a, b) =>
         (b.categories.includes('#100DaysOfCode') ? -1 : 1) -
