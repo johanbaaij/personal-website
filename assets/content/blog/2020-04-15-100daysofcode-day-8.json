@@ -1,7 +1,7 @@
 {
   "date": "2020-04-14T14:00:00.000Z",
   "title": "#100DaysOfCode day 8",
-  "body": "## Progress\n\n* Entered older log entries into Netlify CMS\n* Worked on a responsive homepage layout\n* Introduced new reusable components for displaying blog posts\n  * `TagBadges`\n  * `BlogPostCard`\n\n",
+  "body": "## Progress\n\n* Entered older log entries into Netlify CMS\n* Worked on a responsive homepage layout\n* Introduced new reusable components for displaying blog posts\n  * `CategoryBadges`\n  * `BlogPostCard`\n\n",
   "tags": ["100DaysOfCode"],
   "categories": ["#100DaysOfCode"]
 }

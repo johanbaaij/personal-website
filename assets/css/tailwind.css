@@ -1,3 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.categories__link.nuxt-link-active {
+  @apply bg-blue-300;
+}

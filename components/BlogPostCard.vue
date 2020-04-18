@@ -13,18 +13,18 @@
         post.date | dateString
       }}</time>
     </nuxt-link>
-    <tag-badges class="" :tags="post.categories" />
+    <category-badges :categories="post.categories" />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue, Prop } from 'nuxt-property-decorator'
 import { IBlogPost } from '@/types/blog'
-import TagBadges from '@/components/TagBadges.vue'
+import CategoryBadges from '@/components/CategoryBadges.vue'
 
 @Component({
   components: {
-    TagBadges
+    CategoryBadges
   }
 })
 class BlogPostCard extends Vue {

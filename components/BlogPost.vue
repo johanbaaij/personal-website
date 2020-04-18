@@ -1,28 +1,30 @@
 <template>
   <!-- eslint-disable vue/no-v-html -->
-  <article class="col-span-12 border-gray-600 rounded-sm lg:col-span-9">
-    <h1 class="text-3xl">{{ blogPost.title }}</h1>
-    <h2 class="mt-3 font-bold text-gray-600">
-      {{ blogPost.date | dateString }}
-    </h2>
-    <tag-badges class="mt-3" :tags="blogPost.categories" />
-    <div
-      v-highlightjs
-      class="mt-6 markdown"
-      v-html="$md.render(blogPost.body)"
-    />
-  </article>
+  <div class="mt-6 lg:grid lg:grid-cols-12 lg:gap-4">
+    <article class="col-span-12 border-gray-600 rounded-sm lg:col-span-9">
+      <h1 class="text-3xl">{{ blogPost.title }}</h1>
+      <h2 class="mt-3 font-bold text-gray-600">
+        {{ blogPost.date | dateString }}
+      </h2>
+      <category-badges class="mt-3" :categories="blogPost.categories" />
+      <div
+        v-highlightjs
+        class="mt-6 markdown"
+        v-html="$md.render(blogPost.body)"
+      />
+    </article>
+  </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue, Prop } from 'nuxt-property-decorator'
-import TagBadges from '@/components/TagBadges.vue'
+import CategoryBadges from '@/components/CategoryBadges.vue'
 import { IBlogPost } from '@/types/blog'
 import 'highlight.js/styles/vs2015.css'
 
 @Component({
   components: {
-    TagBadges
+    CategoryBadges
   }
 })
 class BlogPost extends Vue {

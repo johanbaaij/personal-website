@@ -2,7 +2,7 @@
   <div class="mt-6 lg:grid lg:grid-cols-12 lg:gap-4">
     <div class="col-span-9">
       <h2 class="text-2xl tracking-widest lowercase">
-        Posts
+        <nuxt-link to="/blog">Posts</nuxt-link> &raquo; {{ category.title }}
       </h2>
       <blog-post-card
         v-for="post in blogPosts"
@@ -17,6 +17,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
+import { ICategory } from '../../types/category'
 import BlogPostCard from '@/components/BlogPostCard.vue'
 import BlogCategories from '@/components/BlogCategories.vue'
 
@@ -26,10 +27,22 @@ import BlogCategories from '@/components/BlogCategories.vue'
     BlogCategories
   }
 })
-class BlogIndex extends Vue {
+class CategorySlugPage extends Vue {
+  category!: ICategory
+  async asyncData({ params, payload }: any) {
+    if (payload) return { category: payload }
+    else
+      return {
+        category: await require(`~/assets/content/categories/${params.slug}.json`)
+      }
+  }
+
   get blogPosts() {
-    return this.$store.getters['blog/featured']
+    return this.$store.getters['blog/byCategory'](this.category.title)
   }
 }
-export default BlogIndex
+
+export default CategorySlugPage
 </script>
+
+<style></style>
