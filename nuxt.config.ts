@@ -38,12 +38,21 @@ export default {
     routes() {
       const fs = require('fs')
       const path = require('path')
-      return fs.readdirSync('./assets/content/blog').map((file: File) => {
+      const blog = fs.readdirSync('./assets/content/blog').map((file: File) => {
         return {
           route: `/blog/${path.parse(file).name}`, // Return the slug
           payload: require(`./assets/content/blog/${file}`)
         }
       })
+      const categories = fs
+        .readdirSync('./assets/content/categories')
+        .map((file: File) => {
+          return {
+            route: `/categories/${path.parse(file).name}`, // Return the slug
+            payload: require(`./assets/content/categories/${file}`)
+          }
+        })
+      return [...blog, ...categories]
     }
   },
   axios: {},

@@ -2,6 +2,6 @@ export interface IBlogPost {
   slug: string
   title: string
   date: string
-  tags: string[]
+  categories: string[]
   body: string
 }
