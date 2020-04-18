@@ -25,7 +25,13 @@ export const getters: GetterTree<BlogState, RootState> = {
         (b.categories.includes('#100DaysOfCode') ? -1 : 1) -
         (a.categories.includes('#100DaysOfCode') ? -1 : 1)
     ),
-  postCount: (state) => state.posts.length
+  postCount: (state) => state.posts.length,
+
+  byCategory: (_state, getters) => (category: string) => {
+    return getters.sortedByDate.filter((post: IBlogPost) =>
+      post.categories.includes(category)
+    )
+  }
 }
 
 export const actions: ActionTree<BlogState, RootState> = {
