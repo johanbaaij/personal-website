@@ -2,7 +2,7 @@
   <div class="mt-6 lg:grid lg:grid-cols-12 lg:gap-4">
     <div class="col-span-9">
       <h2 class="text-2xl tracking-widest lowercase">
-        Posts
+        Blog
       </h2>
       <blog-post-card
         v-for="post in blogPosts"
@@ -24,6 +24,9 @@ import BlogCategories from '@/components/BlogCategories.vue'
   components: {
     BlogPostCard,
     BlogCategories
+  },
+  head: {
+    title: 'Blog'
   }
 })
 class BlogIndex extends Vue {

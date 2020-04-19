@@ -30,14 +30,16 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
-  head() {
-    return {
-      bodyAttrs: {
-        class: 'my-6'
-      }
+import { Component, Vue } from 'nuxt-property-decorator'
+
+@Component({
+  head: {
+    titleTemplate: '%s | Johan Baaij',
+    bodyAttrs: {
+      class: 'my-6'
     }
   }
 })
+class DefaultLayout extends Vue {}
+export default DefaultLayout
 </script>

@@ -14,7 +14,7 @@
       :post="post"
     />
     <div class="col-span-12 text-right lowercase">
-      <nuxt-link to="/blog"> View all posts ({{ postCount }}) </nuxt-link>
+      <nuxt-link to="/blog">View all posts ({{ postCount }})</nuxt-link>
     </div>
   </div>
 </template>
@@ -26,6 +26,12 @@ import BlogPostCard from '@/components/BlogPostCard.vue'
 @Component({
   components: {
     BlogPostCard
+  },
+  head: {
+    titleTemplate: '',
+    script: [
+      { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
+    ]
   }
 })
 class HomePage extends Vue {
@@ -35,14 +41,6 @@ class HomePage extends Vue {
 
   get postCount() {
     return this.$store.getters['blog/postCount']
-  }
-
-  head() {
-    return {
-      script: [
-        { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
-      ]
-    }
   }
 }
 export default HomePage

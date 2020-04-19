@@ -2,7 +2,7 @@
   <div class="mt-6 lg:grid lg:grid-cols-12 lg:gap-4">
     <div class="col-span-9">
       <h2 class="text-2xl tracking-widest lowercase">
-        <nuxt-link to="/blog">Posts</nuxt-link> &raquo; {{ category.title }}
+        <nuxt-link to="/blog">Blog</nuxt-link> &raquo; {{ category.title }}
       </h2>
       <blog-post-card
         v-for="post in blogPosts"
@@ -39,6 +39,13 @@ class CategorySlugPage extends Vue {
 
   get blogPosts() {
     return this.$store.getters['blog/byCategory'](this.category.title)
+  }
+
+  head() {
+    return {
+      titleTemplate: '%s | Blog | Johan Baaij',
+      title: this.category.title
+    }
   }
 }
 
