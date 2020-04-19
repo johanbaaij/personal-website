@@ -13,12 +13,17 @@ export default {
       {
         hid: 'og:site_name',
         property: 'og:site_name',
-        content: 'Johan Baaij | software development'
+        content: 'johan.baaij.com.au'
       },
       {
         hid: 'og:description',
         property: 'og:description',
         content: 'Personal website of Johan Baaij'
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Johan Baaij | software development'
       },
       { hid: 'og:type', property: 'og:type', content: 'website' }
     ],
