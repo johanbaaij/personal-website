@@ -80,6 +80,7 @@ export default {
       }
     }
   },
+  modern: 'client',
   webfontloader: {
     google: {
       families: ['Rubik']
