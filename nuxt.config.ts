@@ -9,7 +9,28 @@ export default {
         hid: 'description',
         name: 'description',
         content: 'Personal website of Johan Baaij'
-      }
+      },
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: 'Johan Baaij | software development'
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: `${process.env.BASE_URL}/img/banner.png`
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: process.env.BASE_URL
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'Personal website of Johan Baaij'
+      },
+      { hid: 'og:type', property: 'og:type', content: 'website' }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
