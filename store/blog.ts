@@ -41,7 +41,6 @@ export const actions: ActionTree<BlogState, RootState> = {
     const posts = files.keys().map((key) => {
       const res = files(key)
       res.slug = key.slice(2, -5)
-      delete res.body
       return res
     })
 
