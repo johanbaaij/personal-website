@@ -26,12 +26,6 @@ import BlogPostCard from '@/components/BlogPostCard.vue'
 @Component({
   components: {
     BlogPostCard
-  },
-  head: {
-    titleTemplate: '',
-    script: [
-      { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
-    ]
   }
 })
 class HomePage extends Vue {
@@ -41,6 +35,19 @@ class HomePage extends Vue {
 
   get postCount() {
     return this.$store.getters['blog/postCount']
+  }
+
+  head() {
+    return {
+      titleTemplate: '',
+      script: [
+        {
+          hid: 'netlify-identity-widget',
+          src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
+          defer: true
+        }
+      ]
+    }
   }
 }
 export default HomePage
