@@ -16,16 +16,6 @@ export default {
         content: 'Johan Baaij | software development'
       },
       {
-        hid: 'og:image',
-        property: 'og:image',
-        content: `${process.env.BASE_URL}/img/banner.png`
-      },
-      {
-        hid: 'og:url',
-        property: 'og:url',
-        content: process.env.BASE_URL
-      },
-      {
         hid: 'og:description',
         property: 'og:description',
         content: 'Personal website of Johan Baaij'

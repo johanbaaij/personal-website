@@ -44,7 +44,22 @@ class CategorySlugPage extends Vue {
   head() {
     return {
       titleTemplate: '%s | Blog | Johan Baaij',
-      title: this.category.title
+      title: this.category.title,
+      meta: [
+        { hid: 'og:type', property: 'og:type', content: 'article' },
+        { hid: 'og:title', property: 'og:title', content: this.category.title },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content:
+            this.category.description || `Posts on ${this.category.title}`
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: `${process.env.BASE_URL}${this.$route.fullPath}`
+        }
+      ]
     }
   }
 }

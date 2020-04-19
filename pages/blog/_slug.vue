@@ -23,7 +23,21 @@ class BlogPostPage extends Vue {
 
   head() {
     return {
-      title: this.blogPost.title
+      title: this.blogPost.title,
+      meta: [
+        { hid: 'og:type', property: 'og:type', content: 'article' },
+        { hid: 'og:title', property: 'og:title', content: this.blogPost.title },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.blogPost.description
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: `${process.env.BASE_URL}${this.$route.fullPath}`
+        }
+      ]
     }
   }
 }

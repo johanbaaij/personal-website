@@ -32,14 +32,28 @@
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
 
-@Component({
-  head: {
-    titleTemplate: '%s | Johan Baaij',
-    bodyAttrs: {
-      class: 'my-6'
+@Component({})
+class DefaultLayout extends Vue {
+  head() {
+    return {
+      titleTemplate: '%s | Johan Baaij',
+      bodyAttrs: {
+        class: 'my-6'
+      },
+      meta: [
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: `${process.env.BASE_URL}/img/banner.png`
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: process.env.BASE_URL
+        }
+      ]
     }
   }
-})
-class DefaultLayout extends Vue {}
+}
 export default DefaultLayout
 </script>

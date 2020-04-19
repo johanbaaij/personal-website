@@ -25,8 +25,24 @@ import BlogCategories from '@/components/BlogCategories.vue'
     BlogPostCard,
     BlogCategories
   },
-  head: {
-    title: 'Blog'
+  head() {
+    return {
+      title: 'Blog',
+      meta: [
+        { hid: 'og:type', property: 'og:type', content: 'website' },
+        { hid: 'og:title', property: 'og:title', content: 'Blog' },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: 'Writings on software development'
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: `${process.env.BASE_URL}${this.$route.fullPath}`
+        }
+      ]
+    }
   }
 })
 class BlogIndex extends Vue {
