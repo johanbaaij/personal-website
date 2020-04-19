@@ -7,7 +7,7 @@
 module.exports = {
   theme: {
     fontFamily: {
-      sans: ['Rubik']
+      sans: ['Inter, sans-serif']
     }
   },
   variants: {},

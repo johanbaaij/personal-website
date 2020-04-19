@@ -47,7 +47,7 @@ export default BlogPost
     @apply text-black font-bold;
   }
   & a {
-    @apply text-black font-semibold;
+    @apply text-black font-bold;
   }
   & strong a {
     @apply font-bold;

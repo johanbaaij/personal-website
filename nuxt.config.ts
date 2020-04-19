@@ -80,7 +80,7 @@ export default {
   modern: 'client',
   webfontloader: {
     google: {
-      families: ['Rubik']
+      families: ['Inter:400,700&display=swap']
     }
   }
 }
