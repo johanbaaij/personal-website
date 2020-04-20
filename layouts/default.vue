@@ -11,9 +11,7 @@
         </nuxt-link>
       </div>
       <div class="lg:col-span-4">
-        <h1
-          class="text-5xl tracking-widest text-center lowercase lg:inline lg:text-6xl"
-        >
+        <h1 class="text-6xl tracking-widest text-center lowercase lg:inline">
           Johan Baaij
         </h1>
       </div>

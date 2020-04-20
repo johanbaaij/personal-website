@@ -6,7 +6,7 @@
     <nuxt-link
       v-for="category in categories"
       :key="category.slug"
-      class="block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full categories__link"
+      class="block px-3 py-1 mb-2 mr-2 text-sm font-bold text-gray-700 bg-gray-200 rounded-full categories__link"
       :to="category.slug | categoryRoute"
       >{{ category.title }}</nuxt-link
     >
