@@ -9,7 +9,7 @@
       <category-badges class="mt-3" :categories="blogPost.categories" />
       <div
         v-highlightjs
-        class="mt-6 markdown"
+        class="mt-6 markdown markdown__highlightjs"
         v-html="$md.render(blogPost.body)"
       />
     </article>
@@ -20,7 +20,6 @@
 import { Component, Vue, Prop } from 'nuxt-property-decorator'
 import CategoryBadges from '@/components/CategoryBadges.vue'
 import { IBlogPost } from '@/types/blog'
-import 'highlight.js/styles/vs2015.css'
 
 @Component({
   components: {
