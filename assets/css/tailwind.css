@@ -5,3 +5,7 @@
 .categories__link.nuxt-link-active {
   @apply bg-blue-300;
 }
+
+.mdi > svg {
+  @apply inline;
+}

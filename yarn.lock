@@ -7221,6 +7221,13 @@ mdast-util-compact@^2.0.0:
   dependencies:
     unist-util-visit "^2.0.0"
 
+mdi-vue@^1.4.6:
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/mdi-vue/-/mdi-vue-1.4.6.tgz#b647d2311f2e9b04bea80550ff6193ac9592125a"
+  integrity sha512-2NIPNI5zCU+hzT0FM/Q6BaPs2n8JT1KOozkXQVNkigGD/1WMPrP4IhskFnzmcTp/7lKgCrEdMxABMgf7YWiaGw==
+  dependencies:
+    vue "^2.6.11"
+
 mdn-data@2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.0.4.tgz#699b3c38ac6f1d728091a64650b65d388502fd5b"

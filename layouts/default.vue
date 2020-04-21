@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-4 mx-auto">
+  <div class="container flex flex-col min-h-screen px-4 mx-auto">
     <div class="my-40 lg:grid lg:gap-4 lg:grid-cols-12">
       <div class="lg:col-span-2">
         <nuxt-link to="/">
@@ -23,21 +23,62 @@
         </p>
       </div>
     </div>
-    <nuxt />
+    <nuxt class="flex-grow" />
+    <div class="my-6 lg:grid lg:gap-4 lg:grid-cols-12">
+      <div class="col-span-1">
+        <a href="https://twitter.com/BaaijJohan">
+          <twitter-icon />
+        </a>
+      </div>
+
+      <div class="col-span-1">
+        <a class="inline" href="https://github.com/johanbaaij">
+          <github-icon />
+        </a>
+      </div>
+
+      <div class="col-span-1">
+        <a href="https://www.linkedin.com/in/johanbaaij/">
+          <linkedin-icon />
+        </a>
+      </div>
+
+      <div class="col-span-1">
+        <a href="https://stackoverflow.com/users/1184932/johan-baaij">
+          <stack-overflow-icon />
+        </a>
+      </div>
+
+      <div class="col-span-1">
+        <a href="mailto:johan@baaij.com.au">
+          <email-icon />
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
+import TwitterIcon from 'mdi-vue/Twitter.vue'
+import GithubIcon from 'mdi-vue/Github.vue'
+import LinkedinIcon from 'mdi-vue/Linkedin.vue'
+import StackOverflowIcon from 'mdi-vue/StackOverflow.vue'
+import EmailIcon from 'mdi-vue/Email.vue'
 
-@Component({})
+@Component({
+  components: {
+    TwitterIcon,
+    GithubIcon,
+    LinkedinIcon,
+    StackOverflowIcon,
+    EmailIcon
+  }
+})
 class DefaultLayout extends Vue {
   head() {
     return {
       titleTemplate: '%s | Johan Baaij',
-      bodyAttrs: {
-        class: 'my-6'
-      },
       meta: [
         {
           hid: 'og:image',
