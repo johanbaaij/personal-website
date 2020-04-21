@@ -30,7 +30,10 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
   loading: { color: '#fff' },
-  css: [],
+  css: [{ src: 'highlight.js/styles/vs2015.css', lang: 'css' }],
+  purgeCSS: {
+    whitelistPatterns: [/hljs.*/]
+  },
   plugins: ['~/plugins/hljs.ts', '~/plugins/filters.ts'],
   buildModules: [
     '@nuxtjs/eslint-module',
