@@ -48,7 +48,7 @@
     "husky": "^4.0.0",
     "jest": "^25.4.0",
     "lint-staged": "^10.1.6",
-    "nuxt-property-decorator": "^2.5.1",
+    "nuxt-property-decorator": "^2.7.2",
     "postcss-nesting": "^7.0.1",
     "prettier": "^2.0.4",
     "stylelint": "^13.3.2",
