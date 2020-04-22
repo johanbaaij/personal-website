@@ -54,17 +54,27 @@
           <email-icon />
         </a>
       </div>
+
+      <div class="col-span-2 col-start-11 text-right">
+        <a
+          :href="`https://github.com/johanbaaij/personal-website/commit/${commitSha}`"
+        >
+          {{ commitSha }}
+          <source-commit-icon />
+        </a>
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
+import { Component, Provide, Vue } from 'nuxt-property-decorator'
 import TwitterIcon from 'mdi-vue/Twitter.vue'
 import GithubIcon from 'mdi-vue/Github.vue'
 import LinkedinIcon from 'mdi-vue/Linkedin.vue'
 import StackOverflowIcon from 'mdi-vue/StackOverflow.vue'
 import EmailIcon from 'mdi-vue/Email.vue'
+import SourceCommitIcon from 'mdi-vue/SourceCommit.vue'
 
 @Component({
   components: {
@@ -72,10 +82,13 @@ import EmailIcon from 'mdi-vue/Email.vue'
     GithubIcon,
     LinkedinIcon,
     StackOverflowIcon,
-    EmailIcon
+    EmailIcon,
+    SourceCommitIcon
   }
 })
 class DefaultLayout extends Vue {
+  @Provide() commitSha = process.env.NUXT_ENV_CURRENT_GIT_SHA
+
   head() {
     return {
       titleTemplate: '%s | Johan Baaij',
