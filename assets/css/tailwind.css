@@ -1,7 +1,10 @@
+/* purgecss start ignore */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
+/* purgecss end ignore */
 @import 'tailwindcss/utilities';
 
+/* purgecss start ignore */
 .categories__link.nuxt-link-active {
   @apply bg-blue-300;
 }
@@ -9,3 +12,4 @@
 .mdi > svg {
   @apply inline;
 }
+/* purgecss end ignore */
