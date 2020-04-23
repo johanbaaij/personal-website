@@ -1,0 +1,12 @@
+{
+  "date": "2020-04-19T14:00:00.000Z",
+  "title": "#100DaysOfCode day 13",
+  "body": "## Progress\n\nMore portofolio polishing\n\n* Now using the [Inter typeface](https://github.com/rsms/inter)\n* Gained some performance by deferring loading of the Netlify Identity Widget",
+  "tags": [
+    "100DaysOfCode"
+  ],
+  "categories": [
+    "#100DaysOfCode"
+  ],
+  "description": "Fun fact: The ASCII character code 13 is called a Carriage Return"
+}
