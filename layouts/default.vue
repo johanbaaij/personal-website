@@ -24,7 +24,7 @@
       </div>
     </div>
     <nuxt class="flex-grow" />
-    <div class="my-6 lg:grid lg:gap-4 lg:grid-cols-12">
+    <div class="mt-10 mb-6 lg:grid lg:gap-4 lg:grid-cols-12">
       <div class="col-span-1">
         <a href="https://twitter.com/BaaijJohan">
           <twitter-icon />
