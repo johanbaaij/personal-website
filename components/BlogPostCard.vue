@@ -32,7 +32,7 @@ class BlogPostCard extends Vue {
   post!: IBlogPost
 
   get isCodeLogEntry() {
-    return this.post.categories.includes('#100DaysOfCode')
+    return this.post.categories[0] === '#100DaysOfCode'
   }
 }
 export default BlogPostCard
