@@ -1,0 +1,12 @@
+{
+  "date": "2020-04-15T14:00:00.000Z",
+  "title": "#100DaysOfCode day 9",
+  "body": "## Progress\n\nWorked on a few more additions for this website:\n\n* Added a `Category` collection to the Netlify CMS configuration\n* Introduced a getter to the store for blog posts. It prioritizes articles and pushes log entries like this one to the back of the list\n\n## Links\n\n* Found this handy VS Code extension that sorts Tailwind CSS classes (<https://github.com/heybourn/headwind>)",
+  "tags": [
+    "100DaysOfCode"
+  ],
+  "categories": [
+    "#100DaysOfCode"
+  ],
+  "description": "Fun fact: In the Rich Text Format specification, 9 is the language code for the English language"
+}
