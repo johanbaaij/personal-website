@@ -37,42 +37,48 @@ export default BlogPost
 <style>
 .markdown {
   @apply text-lg text-gray-900 leading-normal;
-  & > * + *,
-  & li + li,
-  & li > p + p {
+  > * + *,
+  li + li,
+  li > p + p {
     @apply mt-6;
   }
-  & strong {
+  strong {
     @apply text-black font-bold;
   }
-  & a {
+  a {
     @apply text-black font-bold;
   }
-  & strong a {
+  strong a {
     @apply font-bold;
   }
-  & h2,
+  h2,
   h2 code {
     @apply leading-tight text-xl font-bold text-black mb-2 mt-10;
   }
-  & h3 {
+  h3 {
     @apply leading-tight text-lg font-bold text-black mt-8 -mb-2;
   }
-  & code {
+  code {
     @apply text-sm inline bg-gray-300 px-1;
   }
-  & pre code {
+  pre code {
     @apply block bg-gray-900 p-4 rounded;
   }
-  & blockquote {
+  blockquote {
     @apply border-l-4 border-gray-500 pl-4 italic;
   }
-  & ul,
-  & ol {
+  ul,
+  ol {
     @apply pl-5;
-    @screen sm {
-      @apply pl-10;
-    }
+  }
+  li {
+    @apply list-disc;
+  }
+  li li {
+    list-style-type: circle;
+  }
+  li ul {
+    @apply mt-6;
   }
 }
 </style>
