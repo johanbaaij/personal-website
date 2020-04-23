@@ -1,0 +1,8 @@
+{
+  "date": "2020-04-17T14:00:00.000Z",
+  "title": "#100DaysOfCode day 11",
+  "body": "## Progress\n\n* [Published the category archive page](https://github.com/johanbaaij/personal-website/commit/bc4538f11559455e5fa8e0b07a56a3f3219d18be)\n\n## Links\n\n* While I have only used Glimpse for small tasks so far, my first impressions are positive. The interface certainly struck me as more intuitive than GIMP, which it has been forked from.[ (https://glimpse-editor.org/](https://glimpse-editor.org/))",
+  "tags": ["100DaysOfCode"],
+  "categories": ["#100DaysOfCode"],
+  "description": "Fun fact: The windowing system for Unix computers is known as X11"
+}
