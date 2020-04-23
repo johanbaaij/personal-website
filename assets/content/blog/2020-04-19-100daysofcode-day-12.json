@@ -1,0 +1,12 @@
+{
+  "date": "2020-04-18T14:00:00.000Z",
+  "title": "#100DaysOfCode day 12",
+  "body": "## Progress\n\nA few more additions to this website.\n\n* Refreshed my knowledge of the [Open Graph protocol](https://ogp.me/) and implemented essential meta tags with [vue-meta](https://github.com/nuxt/vue-meta)\n* Slightly improved performance for supporting browsers by enabling compilation of a [modern build in Nuxt](https://nuxtjs.org/api/configuration-modern/)\n\n## Links\n\n* [Optimize Tweets with Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)\n* [Twitter Card validator](https://cards-dev.twitter.com/validator)",
+  "tags": [
+    "100DaysOfCode"
+  ],
+  "categories": [
+    "#100DaysOfCode"
+  ],
+  "description": "Fun fact: Donna Summer's \"Love to Love You Baby\" (1975) was the first 12-inch single released for public purchase"
+}
