@@ -39,7 +39,8 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
     '@nuxtjs/tailwindcss',
-    '@nuxt/typescript-build'
+    '@nuxt/typescript-build',
+    '@nuxtjs/google-analytics'
   ],
   modules: [
     '@nuxtjs/axios',
@@ -49,6 +50,9 @@ export default {
   ],
   markdownit: {
     injected: true
+  },
+  googleAnalytics: {
+    id: 'UA-139935249-1'
   },
   generate: {
     routes() {
