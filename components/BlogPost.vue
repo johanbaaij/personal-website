@@ -3,6 +3,9 @@
   <div class="mt-6 lg:grid lg:grid-cols-12 lg:gap-4">
     <article class="col-span-12 border-gray-600 rounded-sm lg:col-span-9">
       <h1 class="text-3xl">{{ blogPost.title }}</h1>
+      <h2 v-if="blogPost.description" class="mt-3 text-2xl text-gray-600">
+        {{ blogPost.description }}
+      </h2>
       <h2 class="mt-3 font-bold text-gray-600">
         {{ blogPost.date | dateString }}
       </h2>
