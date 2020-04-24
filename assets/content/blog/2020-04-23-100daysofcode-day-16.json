@@ -1,0 +1,12 @@
+{
+  "date": "2020-04-22T14:00:00.000Z",
+  "title": "#100DaysOfCode day 16",
+  "body": "## Progress\n\n* Entered all my log entries into Netlify CMS\n* Added some social icons to the footer with [mdi-vue](https://github.com/therufa/mdi-vue)",
+  "tags": [
+    "100DaysOfCode"
+  ],
+  "categories": [
+    "#100DaysOfCode"
+  ],
+  "description": "All up to date!"
+}
