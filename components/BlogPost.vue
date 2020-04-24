@@ -1,7 +1,7 @@
 <template>
   <!-- eslint-disable vue/no-v-html -->
   <div class="mt-6 lg:grid lg:grid-cols-12 lg:gap-4">
-    <article class="col-span-12 border-gray-600 rounded-sm lg:col-span-9">
+    <article class="col-span-12 border-gray-600 rounded-sm lg:col-span-7">
       <h1 class="text-3xl">{{ blogPost.title }}</h1>
       <h2 v-if="blogPost.description" class="mt-3 text-2xl text-gray-600">
         {{ blogPost.description }}
