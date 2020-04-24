@@ -8,10 +8,15 @@
       </h2>
     </div>
     <blog-post-card
-      v-for="post in featured"
+      v-for="(post, index) in featured"
       :key="post.slug"
-      class="mt-6 lg:mt-1 lg:h-56 lg:col-span-4"
+      :class="{
+        'lg:col-span-5': isFirstRow(index),
+        'lg:col-span-4': isSecondRow(index)
+      }"
       :post="post"
+      :display-description="isFirstRow(index)"
+      class="mt-6 lg:mt-1 lg:min-h-56"
     />
     <div class="col-span-12 text-right lowercase">
       <nuxt-link to="/blog">View all posts ({{ postCount }})</nuxt-link>
@@ -35,6 +40,14 @@ class HomePage extends Vue {
 
   get postCount() {
     return this.$store.getters['blog/postCount']
+  }
+
+  isFirstRow(index: number) {
+    return index < 2
+  }
+
+  isSecondRow(index: number) {
+    return index > 1
   }
 
   head() {
