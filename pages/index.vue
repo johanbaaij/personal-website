@@ -16,7 +16,7 @@
       }"
       :post="post"
       :display-description="isFirstRow(index)"
-      class="mt-6 lg:mt-1 lg:min-h-56"
+      class="mt-6 lg:mt-1"
     />
     <div class="col-span-12 text-right lowercase">
       <nuxt-link to="/blog">View all posts ({{ postCount }})</nuxt-link>
