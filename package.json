@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.4.5",
-    "@nuxtjs/axios": "^5.10.1",
+    "@nuxtjs/axios": "^5.10.2",
     "@nuxtjs/dotenv": "^1.4.0",
     "@nuxtjs/markdownit": "^1.2.9",
     "highlight.js": "^10.0.0",
