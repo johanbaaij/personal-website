@@ -7288,10 +7288,10 @@ mdast-util-compact@^2.0.0:
   dependencies:
     unist-util-visit "^2.0.0"
 
-mdi-vue@^1.4.7:
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/mdi-vue/-/mdi-vue-1.4.7.tgz#128f5291ba5d6c71ff6255102b01a65fcbfc0301"
-  integrity sha512-aMlmSjy4xx4oL8PUTE85QZ1EsmLhucT4r7JwtVHMj8Qxoz/rJGsB6PekGuEAK/5ldslNTwdGJvNi3TbYt72DEA==
+mdi-vue@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/mdi-vue/-/mdi-vue-1.5.0.tgz#8b9c34c9dd85040a515951c3823292f216b5a2e8"
+  integrity sha512-nxWFN/TGbHERL8eR7uleRq2aP8fSgV91wN7LlBqDvha7zAyhOUdSY9z3JTS7OsaSfTJWB9l+QXDw9v72eogz3A==
   dependencies:
     vue "^2.6.11"
 
