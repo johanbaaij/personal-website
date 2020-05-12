@@ -27,7 +27,7 @@
     "@nuxtjs/axios": "^5.10.1",
     "@nuxtjs/dotenv": "^1.4.0",
     "@nuxtjs/markdownit": "^1.2.9",
-    "highlight.js": "^10.0.0",
+    "highlight.js": "^10.0.3",
     "mdi-vue": "^1.4.7",
     "nuxt": "^2.0.0",
     "nuxt-webfontloader": "^1.1.0"
