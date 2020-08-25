@@ -7390,12 +7390,7 @@ lodash.zip@^4.2.0:
   resolved "https://registry.yarnpkg.com/lodash.zip/-/lodash.zip-4.2.0.tgz#ec6662e4896408ed4ab6c542a3990b72cc080020"
   integrity sha1-7GZi5IlkCO1KtsVCo5kLcswIACA=
 
-lodash@^4.15.0, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.3, lodash@^4.17.5:
-  version "4.17.20"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
-  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
-
-lodash@^4.17.19:
+lodash@^4.15.0, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.3, lodash@^4.17.5:
   version "4.17.20"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
@@ -7567,10 +7562,10 @@ mdast-util-compact@^2.0.0:
   dependencies:
     unist-util-visit "^2.0.0"
 
-mdi-vue@^1.4.7:
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/mdi-vue/-/mdi-vue-1.4.7.tgz#128f5291ba5d6c71ff6255102b01a65fcbfc0301"
-  integrity sha512-aMlmSjy4xx4oL8PUTE85QZ1EsmLhucT4r7JwtVHMj8Qxoz/rJGsB6PekGuEAK/5ldslNTwdGJvNi3TbYt72DEA==
+mdi-vue@^1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/mdi-vue/-/mdi-vue-1.7.1.tgz#4908571dbbd68ec5af1cfd53b768f2ce329eafe2"
+  integrity sha512-wP4G5bw2EtyDSB5Fk6aw4ROL5lSOiIyzNRcdV3NQ18liHmxRURZydsgQVu2z2+71wCQ/cmGP/dw8iquV3nKqBQ==
   dependencies:
     vue "^2.6.11"
 
